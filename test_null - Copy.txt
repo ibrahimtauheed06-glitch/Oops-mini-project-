@@ -1,0 +1,25 @@
+
+# Java compiled files
+*.class
+
+# Maven build output
+target/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+applet-legacy/*.log
+
+# IDE files
+.idea/
+.vscode/
+
+# Temporary files
+test_null.txt
+powershell.cmd
+powershell.com
+powershell.exe
