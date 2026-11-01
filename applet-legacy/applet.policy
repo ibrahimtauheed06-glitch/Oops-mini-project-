@@ -1,0 +1,24 @@
+grant {
+    // Permission to connect to local MySQL database server
+    permission java.net.SocketPermission "localhost:3306", "connect,resolve";
+    permission java.net.SocketPermission "127.0.0.1:3306", "connect,resolve";
+
+    // Permission to read database configuration environment variables (avoids hardcoding passwords)
+    permission java.lang.RuntimePermission "getenv.DB_USER";
+    permission java.lang.RuntimePermission "getenv.DB_PASSWORD";
+    permission java.lang.RuntimePermission "getenv.DB_HOST";
+    permission java.lang.RuntimePermission "getenv.DB_PORT";
+    permission java.lang.RuntimePermission "getenv.DB_NAME";
+    permission java.lang.RuntimePermission "getenv.MYSQL_PWD";
+    permission java.lang.RuntimePermission "getenv.MYSQL_USER";
+
+    // Standard properties and driver reflection requirements for MySQL Connector/J
+    permission java.util.PropertyPermission "*", "read";
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+    permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+
+    // MySQL Connector/J AbandonedConnectionCleanupThread requirements
+    permission java.lang.RuntimePermission "modifyThread";
+    permission java.lang.RuntimePermission "setContextClassLoader";
+    permission java.lang.RuntimePermission "getClassLoader";
+};

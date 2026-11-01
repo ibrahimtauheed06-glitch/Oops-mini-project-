@@ -1,0 +1,14 @@
+*.class
+/target/
+/.env
+.env.*
+!.env.example
+*.log
+/.idea/
+/.vscode/
+/test_null.txt
+/powershell.cmd
+/powershell.com
+/powershell.exe
+/CURRENT_DATE()
+/CURRENT_DATE())test_null - Copy.txt
