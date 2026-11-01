@@ -49,7 +49,7 @@ The project applies core **Object-Oriented Programming (OOP)** principles—enca
 7. **Collections & Distribution**
    * Allows NGOs, food banks, and collectors to log food collection.
    * **Atomic Database Transactions:** Automatically decrements inventory and updates status (`AVAILABLE` → `PARTIALLY_COLLECTED` → `COLLECTED`).
-   * Built-in food safety verification preventing distribution of past-expiry items.
+   * Built-in food safety verification preventing distribution of past expiry items.
 
 8. **Waste & Spoilage Auditing**
    * Log spoiled, damaged, or expired food with specific reasons.
