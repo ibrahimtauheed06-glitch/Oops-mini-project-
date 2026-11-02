@@ -9,7 +9,7 @@ A Java and MySQL-based Object-Oriented Programming (OOP) Mini-Project designed t
 * **Ibrahim Tauheed**
 * **Krishna Tripathi**
 * **Arnav**
-* **Ujjwal Saffar**
+* **Ujjawal Saffar**
 
 ---
 
